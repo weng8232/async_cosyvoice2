@@ -1,0 +1,2 @@
+# async_cosyvoice2
+使用vllm加速cosyvoice2新版代码的推理
