@@ -1,3 +1,4 @@
+代码还没写完……
 # 项目概述
 Async CosyVoice 项目用于加速 cosyvoice2 新版代码的推理过程，当前仅支持 Linux 系统，并且依赖 vllm 库。以下是该项目的主要特性：
 
