@@ -7,20 +7,26 @@ LLM 推理加速：借助 vllm 对 LLM 部分的推理进行加速。
 请使用 Python 3.10.16+的 版本，按以下步骤创建并激活 Conda 环境：
 
 conda create -n cosyvoice2 python=3.10.16 -y
+
 conda activate cosyvoice2
 # 使用步骤
 1. 克隆 CosyVoice  tag 2.0的项目
+   
 git clone https://github.com/FunAudioLLM/CosyVoice.git
+
 cd CosyVoice
+
 git submodule update --init --recursive
 
-# 安装系统依赖
-1. conda install -y -c conda-forge pynini==2.1.5（arm架构需要按照这个指引https://zhuanlan.zhihu.com/p/28994837054先安装依赖）
+2. conda install -y -c conda-forge pynini==2.1.5（arm架构需要按照这个指引https://zhuanlan.zhihu.com/p/28994837054先安装依赖）
+   
 sudo apt-get update
-sudo apt-get install sox libsox-dev -y
-2. 把本项目中的model.py,cosyvoice.py替换到/CosyVoice-main/cosyvoice/cli/中；把本项目中的llm.py替换到/CosyVoice-main/cosyvoice/llm/中
 
-3. 安装依赖
+sudo apt-get install sox libsox-dev -y
+
+3. 把本项目中的model.py,cosyvoice.py替换到/CosyVoice-main/cosyvoice/cli/中；把本项目中的llm.py替换到/CosyVoice-main/cosyvoice/llm/中
+
+4. 安装依赖
 进入 CosyVoice-main目录，安装所有依赖：
 
 cd CosyVoice-main
